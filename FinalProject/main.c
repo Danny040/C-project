@@ -1,22 +1,21 @@
 #include <stdio.h>
 #include <curl/curl.h>
+#include "appdev.h"
 
 int main(void)
 {
 	CURL* curl;
 	CURLcode res;
 
-	char poststring[200], name[100], proj[100];
-	printf("Enter your name: ");
-	scanf("%s", name);
-	printf("Enter your project: ");
-	scanf("%s", proj);
-	sprintf(poststring, "name=%s&project=%s", name, proj);
+	char poststring[200];
+	combo c = minimax();
+
+	sprintf(poststring, "min=%d&max=%d", c.min, c.max);
 
 	curl = curl_easy_init();
 	if (curl) {
 
-		curl_easy_setopt(curl, CURLOPT_URL, "http://www.cc.puv.fi/~gc/echo.php");
+		curl_easy_setopt(curl, CURLOPT_URL, "http://www.cc.puv.fi/~e2301469/echo.php");
 
 		curl_easy_setopt(curl, CURLOPT_POSTFIELDS, poststring);
 
