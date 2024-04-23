@@ -28,15 +28,15 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="U:\public_html\echo.php">
+    <None Include="U:\public_html\app.html">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="U:\public_html\app24gB.html">
+    <None Include="U:\public_html\server_echo.php">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="U:\public_html\mydata.txt">
+    <Text Include="U:\public_html\myData.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

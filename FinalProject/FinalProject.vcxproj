@@ -138,11 +138,11 @@
     <ClInclude Include="appdev.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="U:\public_html\app24gB.html" />
-    <None Include="U:\public_html\echo.php" />
+    <None Include="U:\public_html\app.html" />
+    <None Include="U:\public_html\server_echo.php" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="U:\public_html\mydata.txt" />
+    <Text Include="U:\public_html\myData.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
